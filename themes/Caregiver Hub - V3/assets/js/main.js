@@ -1,0 +1,1 @@
+console.log('Caregiver Hub theme loaded.');
