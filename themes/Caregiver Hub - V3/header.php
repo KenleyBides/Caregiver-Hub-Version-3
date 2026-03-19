@@ -14,28 +14,31 @@ if (!defined('ABSPATH')) {
 
 <header class="site-header">
     <div class="site-header__inner">
-        <a href="<?php echo esc_url(home_url('/')); ?>" class="site-logo">
-            <?php bloginfo('name'); ?>
-        </a>
-
-        <nav class="site-nav">
+        <nav class="site-nav site-header__left" aria-label="Primary navigation">
             <?php
             wp_nav_menu(array(
                 'theme_location' => 'primary',
                 'container'      => false,
                 'fallback_cb'    => false,
+                'menu_class'     => 'site-nav__menu',
             ));
             ?>
         </nav>
 
-        <div class="site-auth-links">
-            <?php if (is_user_logged_in()) : ?>
-                <a href="<?php echo esc_url(caregiverhub_get_page_url('chat')); ?>">Chat</a>
-                <a href="<?php echo esc_url(wp_logout_url(home_url('/'))); ?>">Log out</a>
-            <?php else : ?>
-                <a href="<?php echo esc_url(caregiverhub_get_page_url('sign-in')); ?>">Sign in</a>
-                <a href="<?php echo esc_url(caregiverhub_get_page_url('sign-up')); ?>">Sign up</a>
-            <?php endif; ?>
+        <a href="<?php echo esc_url(home_url('/')); ?>" class="site-logo-mark" aria-label="Home">
+            Logo
+        </a>
+
+        <div class="site-header__right">
+            <div class="site-auth-links">
+                <?php if (is_user_logged_in()) : ?>
+                    <a class="auth-link auth-link--secondary" href="<?php echo esc_url(caregiverhub_get_page_url('chat')); ?>">Chat</a>
+                    <a class="auth-link auth-link--primary" href="<?php echo esc_url(wp_logout_url(home_url('/'))); ?>">Log out</a>
+                <?php else : ?>
+                    <a class="auth-link auth-link--secondary" href="<?php echo esc_url(caregiverhub_get_page_url('sign-in')); ?>">Sign in</a>
+                    <a class="auth-link auth-link--primary" href="<?php echo esc_url(caregiverhub_get_page_url('sign-up')); ?>">Sign up</a>
+                <?php endif; ?>
+            </div>
         </div>
     </div>
 </header>
