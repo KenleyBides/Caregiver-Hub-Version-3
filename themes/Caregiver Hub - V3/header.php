@@ -25,9 +25,15 @@ if (!defined('ABSPATH')) {
             ?>
         </nav>
 
-        <a href="<?php echo esc_url(home_url('/')); ?>" class="site-logo-mark" aria-label="Home">
-            Logo
-        </a>
+        <div class="site-logo-mark">
+            <?php if (has_custom_logo()) : ?>
+                <?php the_custom_logo(); ?>
+            <?php else : ?>
+                <a href="<?php echo esc_url(home_url('/')); ?>" aria-label="Home">
+                    <?php bloginfo('name'); ?>
+                </a>
+            <?php endif; ?>
+        </div>
 
         <div class="site-header__right">
             <div class="site-auth-links">

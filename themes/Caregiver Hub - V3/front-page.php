@@ -69,9 +69,9 @@ get_header();
     <section class="home-section home-explore" aria-label="Explore services">
         <h2 class="home-section__title">Explore</h2>
         <div class="explore-grid">
-            <a class="explore-card explore-card--navy" href="#"><h3>Explore Support</h3><p>Discover caregiver tools and resources.</p></a>
-            <a class="explore-card explore-card--teal" href="#"><h3>Explore Programs</h3><p>Find available programs in your area.</p></a>
-            <a class="explore-card explore-card--green" href="#"><h3>Explore Community</h3><p>Connect with local support networks.</p></a>
+            <a class="explore-card explore-card--navy" href="https://www.empowersimcoe.ca/"><h3>Empower Simcoe</h3><p>Discover caregiver tools and resources.</p></a>
+            <a class="explore-card explore-card--teal" href="https://marketplace.empowersimcoe.ca/"><h3>Marketplace</h3><p>Find available programs in your area.</p></a>
+            <a class="explore-card explore-card--green" href="https://empowersimcoe.prevueaps.ca/jobs/"><h3>Careers</h3><p>Connect with local support networks.</p></a>
         </div>
     </section>
 </main>
