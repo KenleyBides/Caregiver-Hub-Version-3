@@ -7,12 +7,14 @@ get_header();
 ?>
 
 <main class="site-main site-main--home">
+    <!-- Section 1: Media carousel (auto-rotates every 3s) -->
     <section class="home-section home-carousel" aria-label="Featured media">
         <h1 class="home-carousel__title">
             <span class="home-carousel__title-accent">Welcome to</span>
             <span class="home-carousel__title-main">Empower Simcoe!</span>
         </h1>
         <p class="home-carousel__subtitle">Empowering people to lead a meaningful and inclusive life.</p>
+        <!-- Carousel slides + play button + dots -->
         <div class="media-carousel" data-carousel>
             <div class="media-carousel__track">
                 <article class="media-slide"></article>
@@ -31,6 +33,7 @@ get_header();
         <a class="home-carousel__cta" href="#">Get Started</a>
     </section>
 
+    <!-- Section 2: News grid (clickable cards) -->
     <section class="home-section home-news" aria-label="Latest news">
         <div class="news-grid">
             <a class="news-card" href="#">
@@ -66,6 +69,7 @@ get_header();
         </div>
     </section>
 
+    <!-- Section 3: Explore links (3 brand-colored cards) -->
     <section class="home-section home-explore" aria-label="Explore services">
         <h2 class="home-section__title">Explore</h2>
         <div class="explore-grid">

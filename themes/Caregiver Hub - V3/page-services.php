@@ -7,6 +7,7 @@ get_header();
 
 <main class="site-main site-main--services">
     <div class="about-layout about-layout--new">
+        <!-- Services Section: Feature grid (6 service cards) -->
         <section class="about-new-section about-new-section--features about-services-section" aria-label="Services">
             <div class="about-new__container">
                 <h2 class="about-new__title">What you can use every day</h2>

@@ -7,6 +7,7 @@ get_header();
 
 <main class="site-main">
     <div class="about-layout about-layout--new">
+        <!-- About Section 1: Problem/Solution split -->
         <section class="about-new-section about-new-section--problem" aria-label="Problem and solution">
             <div class="about-new__container">
                 <h2 class="about-new__title">Why caregivers need more than schedules</h2>
@@ -35,6 +36,7 @@ get_header();
             </div>
         </section>
 
+        <!-- About Section 2: Join/CTA panel -->
         <section class="about-new-section about-new-section--cta" aria-label="Join the Caregiver Hub">
             <div class="about-new__container">
                 <div class="about-cta">
