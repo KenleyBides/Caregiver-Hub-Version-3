@@ -36,6 +36,15 @@ if (!defined('ABSPATH')) {
         </div>
 
         <div class="site-header__right">
+            <form class="site-search" method="get" action="<?php echo esc_url(home_url('/')); ?>">
+                <input 
+                    type="search" 
+                    name="s" 
+                    placeholder="Search..." 
+                    value="<?php echo get_search_query(); ?>"
+                    >
+            </form>
+            
             <div class="site-auth-links">
                 <?php if (is_user_logged_in()) : ?>
                     <a class="auth-link auth-link--secondary" href="<?php echo esc_url(caregiverhub_get_page_url('chat')); ?>">Chat</a>

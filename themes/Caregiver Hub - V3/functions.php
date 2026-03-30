@@ -18,6 +18,52 @@ function caregiverhub_setup() {
 add_action('after_setup_theme', 'caregiverhub_setup');
 
 /**
+ * Search Function
+ */
+function caregiverhub_custom_search_redirect() {
+    if (is_search() && !is_admin()) {
+        $query = strtolower(trim(get_search_query()));
+
+        $routes = array(
+            // Home / hero
+            'home'        => '/#home-hero',
+            'welcome'     => '/#home-hero',
+            'empower'     => '/#home-hero',
+            'hero'        => '/#home-hero',
+            'featured'    => '/#home-hero',
+
+            // News section
+            'news'        => '/#home-news',
+            'updates'     => '/#home-news',
+            'latest'      => '/#home-news',
+            'articles'    => '/#home-news',
+
+            // Explore section
+            'explore'     => '/#home-explore',
+            'services'    => '/#home-explore',
+            'programs'    => '/#home-explore',
+            'marketplace' => '/#home-explore',
+            'careers'     => '/#home-explore',
+
+            // Other pages
+            'about'       => '/about/',
+            'help'        => '/contact/',
+            'support'     => '/contact/',
+            'chat'        => '/chat/',
+        );
+
+        foreach ($routes as $keyword => $url) {
+            if (strpos($query, $keyword) !== false) {
+                wp_redirect(home_url($url));
+                exit;
+            }
+        }
+    }
+}
+add_action('template_redirect', 'caregiverhub_custom_search_redirect');
+
+
+/**
  * Enqueue assets.
  */
 function caregiverhub_enqueue_assets() {

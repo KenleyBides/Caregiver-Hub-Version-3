@@ -34,7 +34,7 @@ get_header();
     </section>
 
     <!-- Section 2: News grid (clickable cards) -->
-    <section class="home-section home-news" aria-label="Latest news">
+    <section id="home-news" class="home-section home-news" aria-label="Latest news">
         <div class="news-grid">
             <a class="news-card" href="#">
                 <span class="news-card__icon" aria-hidden="true">◒</span>
