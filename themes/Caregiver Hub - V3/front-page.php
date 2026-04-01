@@ -8,7 +8,7 @@ get_header();
 
 <main class="site-main site-main--home">
     <!-- Section 1: Media carousel (auto-rotates every 3s) -->
-    <section class="home-section home-carousel" aria-label="Featured media">
+    <section id="home-hero" class="home-section home-carousel" aria-label="Featured media">
         <h1 class="home-carousel__title">
             <span class="home-carousel__title-accent">Welcome to</span>
             <span class="home-carousel__title-main">Empower Simcoe!</span>
@@ -70,7 +70,7 @@ get_header();
     </section>
 
     <!-- Section 3: Explore links (3 brand-colored cards) -->
-    <section class="home-section home-explore" aria-label="Explore services">
+    <section id="home-explore" class="home-section home-explore" aria-label="Explore services">
         <h2 class="home-section__title">Explore</h2>
         <div class="explore-grid">
             <a class="explore-card explore-card--navy" href="https://www.empowersimcoe.ca/"><h3>Empower Simcoe</h3><p>Discover caregiver tools and resources.</p></a>

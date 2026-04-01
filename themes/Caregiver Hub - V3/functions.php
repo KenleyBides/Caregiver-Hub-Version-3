@@ -40,15 +40,13 @@ function caregiverhub_custom_search_redirect() {
 
             // Explore section
             'explore'     => '/#home-explore',
-            'services'    => '/#home-explore',
-            'programs'    => '/#home-explore',
             'marketplace' => '/#home-explore',
             'careers'     => '/#home-explore',
 
             // Other pages
             'about'       => '/about/',
             'help'        => '/contact/',
-            'support'     => '/contact/',
+            'services'     => '/services/',
             'chat'        => '/chat/',
         );
 
