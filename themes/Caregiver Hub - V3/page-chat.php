@@ -7,8 +7,10 @@ get_header();
 ?>
 
 <main class="site-main">
+    <!-- Section: Page title -->
     <h1><?php the_title(); ?></h1>
 
+    <!-- Section: Chat access (guest prompt or placeholder for members) -->
     <?php if (!is_user_logged_in()) : ?>
         <p>You must be signed in to view this page.</p>
         <p><a href="<?php echo esc_url(caregiverhub_get_page_url('sign-in')); ?>">Sign in</a></p>

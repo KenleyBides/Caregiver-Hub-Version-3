@@ -2,8 +2,10 @@
 
 <main class="search-results-page">
     <div class="container">
+        <!-- Section: Search query heading -->
         <h1>Search Results for "<?php echo esc_html(get_search_query()); ?>"</h1>
 
+        <!-- Section: Results list or empty state -->
         <?php if (have_posts()) : ?>
             <?php while (have_posts()) : the_post(); ?>
                 <article class="search-result-item">

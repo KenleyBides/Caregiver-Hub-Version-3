@@ -7,7 +7,7 @@ get_header();
 ?>
 
 <main class="site-main site-main--home">
-    <!-- Section 1: Media carousel (auto-rotates every 3s) -->
+    <!-- Section: Media carousel (auto-rotates every 3s) -->
     <section id="home-hero" class="home-section home-carousel" aria-label="Featured media">
         <h1 class="home-carousel__title">
             <span class="home-carousel__title-accent">Welcome to</span>
@@ -33,7 +33,7 @@ get_header();
         <a class="home-carousel__cta" href="#">Get Started</a>
     </section>
 
-    <!-- Section 2: News grid (clickable cards) -->
+    <!-- Section: News grid (clickable cards) -->
     <section id="home-news" class="home-section home-news" aria-label="Latest news">
         <div class="news-grid">
             <a class="news-card" href="#">
@@ -69,7 +69,7 @@ get_header();
         </div>
     </section>
 
-    <!-- Section 3: Explore links (3 brand-colored cards) -->
+    <!-- Section: Explore links (3 brand-colored cards) -->
     <section id="home-explore" class="home-section home-explore" aria-label="Explore services">
         <h2 class="home-section__title">Explore</h2>
         <div class="explore-grid">

@@ -8,6 +8,7 @@ get_header();
 
 <main class="site-main">
     <?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+        <!-- Section: Privacy policy content -->
         <article class="page-content">
             <h1><?php the_title(); ?></h1>
             <div>
